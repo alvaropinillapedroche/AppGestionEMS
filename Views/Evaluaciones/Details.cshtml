@@ -1,0 +1,82 @@
+﻿@model AppGestionEMS.Models.Evaluaciones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Evaluaciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.alumno.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.alumno.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.curso.promocion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.curso.promocion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.convocatoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.convocatoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notaP1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notaP1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notaP2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notaP2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notaP3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notaP3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notaP4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notaP4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notaPractica)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notaPractica)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
